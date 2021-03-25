@@ -51,9 +51,9 @@ production:
   <<: *default
   
   adapter: postgresql
-  eg: unicode
+  encoding: unicode
   pool: 5
-  
+
   database: microposts_production
   username: microposts
   password: <%= ENV['MICROPOSTS_DATABASE_PASSWORD'] %>
